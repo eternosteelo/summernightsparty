@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: auto;
+  overscroll-behavior: none;
+}
+
+nav {
+  @apply font-squada text-2xl;
+}
+.tw-sm-hidden {
+  @apply hidden;
+}
+
+.tw-dropdown-menu {
+  @apply hidden;
+}
+
+.tw-dropdown-menu li {
+  @apply mb-2;
+}
+
+#desktop-nav > a,
+.tw-dropdown-menu li > a {
+  @apply hover:text-amber-400;
+}
+
+.show {
+  @apply block;
+}
+
+.section-heading {
+  @apply font-squada text-amber-400 text-4xl font-semibold;
+}
+
+ol > li {
+  @apply ml-16 mb-4;
+}
+
+ul > li {
+  @apply ml-4 mb-4;
+}
+
+.sponsor-headings {
+  @apply font-squada font-bold text-center text-2xl uppercase;
+}
+
+.sponsor-cost {
+  @apply font-squada text-amber-600 font-bold text-center text-3xl uppercase mb-8;
+}
+
+.sponsor-card {
+  @apply flex-col min-h-full p-6 w-full lg:w-1/4 bg-gray-200 rounded-lg border border-gray-200 shadow-md;
+}
+
+#vendors-container {
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  /* background-size: 400% 400%; */
+  /* animation: gradient 15s ease infinite; */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@screen md {
+  .tw-sm-hidden {
+    @apply block;
+  }
+}
