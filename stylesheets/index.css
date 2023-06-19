@@ -56,6 +56,14 @@ ul > li {
   @apply flex-col min-h-full p-6 w-full lg:w-1/4 bg-gray-200 rounded-lg border border-gray-200 shadow-md;
 }
 
+.logo-wrapper {
+  @apply bg-white p-6 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 h-52 w-52 flex flex-col mx-auto lg:mx-0 justify-center;
+}
+
+.sponsor-img {
+  @apply object-contain h-full;
+}
+
 #vendors-container {
   /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
   /* background-size: 400% 400%; */
